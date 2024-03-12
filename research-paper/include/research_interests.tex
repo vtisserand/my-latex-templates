@@ -10,9 +10,9 @@ In particular, we kill the diffusion when it leaves the open set $D$.
 
 \begin{proposition}
     Price of a double no-touch option with lower and upper barriers $S_{min}$, $S_{max}$:
-
-
-$$V(S,t) = 2\pi \left(\dfrac{S}{S_{min}}\right)^{\alpha} e^{\beta(T-t)} \sum_{n=1}^{\infty} n \left[\dfrac{(1 - (-1)^{m}e^{-\alpha H})}{\alpha^2 H^2 + n^2 \pi^2} \right] \exp \left(-\frac{1}{2}\sigma^2 \dfrac{n^2 \pi^2}{H^2} t \right) \sin \left(\dfrac{n\pi}{H} \ln \frac{S}{S_{min}} \right).$$
+\begin{equation*}
+    \resizebox{.95\hsize}{!}{$V(S,t) = 2\pi \left(\dfrac{S}{S_{min}}\right)^{\alpha} e^{\beta(T-t)} \sum_{n=1}^{\infty} n \left[\dfrac{(1 - (-1)^{m}e^{-\alpha H})}{\alpha^2 H^2 + n^2 \pi^2} \right] \exp \left(-\frac{1}{2}\sigma^2 \dfrac{n^2 \pi^2}{H^2} t \right) \sin \left(\dfrac{n\pi}{H} \ln \frac{S}{S_{min}} \right).$}
+\end{equation*}
 
 with $H=\ln(S_{max}/S_{min})$, $\alpha = -\Tilde{r}/\sigma^2$ and $\beta = -\Tilde{r}/ 2\sigma^2 - r$, $\Tilde{r} = r - \frac{1}{2}\sigma^2$.
 \end{proposition}
@@ -29,8 +29,6 @@ with $H=\ln(S_{max}/S_{min})$, $\alpha = -\Tilde{r}/\sigma^2$ and $\beta = -\Til
 \end{figure}
 
 \subsection{Deep learning}
-
-\cite{gobet2000weak}
 
 \subsubsection*{Generating synthetic data\footnote{\fullcite{kondratyev2019market}}}
 
