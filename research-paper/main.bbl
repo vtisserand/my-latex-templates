@@ -1,0 +1,172 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{ynt/global//global/global}
+    \entry{gobet2000weak}{article}{}
+      \name{author}{1}{}{%
+        {{hash=13ae338686e9b8f9d070801e8c6aa4ed}{%
+           family={Gobet},
+           familyi={G\bibinitperiod},
+           given={Emmanuel},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{13ae338686e9b8f9d070801e8c6aa4ed}
+      \strng{fullhash}{13ae338686e9b8f9d070801e8c6aa4ed}
+      \strng{bibnamehash}{13ae338686e9b8f9d070801e8c6aa4ed}
+      \strng{authorbibnamehash}{13ae338686e9b8f9d070801e8c6aa4ed}
+      \strng{authornamehash}{13ae338686e9b8f9d070801e8c6aa4ed}
+      \strng{authorfullhash}{13ae338686e9b8f9d070801e8c6aa4ed}
+      \field{labelalpha}{Gob00}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Stochastic processes and their applications}
+      \field{number}{2}
+      \field{title}{Weak approximation of killed diffusion using Euler schemes}
+      \field{volume}{87}
+      \field{year}{2000}
+      \field{pages}{167\bibrangedash 197}
+      \range{pages}{31}
+    \endentry
+    \entry{cont2001empirical}{article}{}
+      \name{author}{1}{}{%
+        {{hash=4adbb1a85104895dfcc25d4e2cac8cce}{%
+           family={Cont},
+           familyi={C\bibinitperiod},
+           given={Rama},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IOP Publishing}%
+      }
+      \strng{namehash}{4adbb1a85104895dfcc25d4e2cac8cce}
+      \strng{fullhash}{4adbb1a85104895dfcc25d4e2cac8cce}
+      \strng{bibnamehash}{4adbb1a85104895dfcc25d4e2cac8cce}
+      \strng{authorbibnamehash}{4adbb1a85104895dfcc25d4e2cac8cce}
+      \strng{authornamehash}{4adbb1a85104895dfcc25d4e2cac8cce}
+      \strng{authorfullhash}{4adbb1a85104895dfcc25d4e2cac8cce}
+      \field{labelalpha}{Con01}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Quantitative finance}
+      \field{number}{2}
+      \field{title}{Empirical properties of asset returns: stylized facts and statistical issues}
+      \field{volume}{1}
+      \field{year}{2001}
+      \field{pages}{223}
+      \range{pages}{1}
+    \endentry
+    \entry{goodfellow2014generative}{article}{}
+      \name{author}{8}{}{%
+        {{hash=5d2585c11210cf1d4512e6e0a03ec315}{%
+           family={Goodfellow},
+           familyi={G\bibinitperiod},
+           given={Ian},
+           giveni={I\bibinitperiod}}}%
+        {{hash=a341d25f80a8118cdbb90b272adc8b4f}{%
+           family={Pouget-Abadie},
+           familyi={P\bibinithyphendelim A\bibinitperiod},
+           given={Jean},
+           giveni={J\bibinitperiod}}}%
+        {{hash=9e80f4779b032f68a6106e1424345450}{%
+           family={Mirza},
+           familyi={M\bibinitperiod},
+           given={Mehdi},
+           giveni={M\bibinitperiod}}}%
+        {{hash=743dd6cdaa6639320289d219d351d7b7}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Bing},
+           giveni={B\bibinitperiod}}}%
+        {{hash=e8151f1b8f85a048cacb34f374ec922b}{%
+           family={Warde-Farley},
+           familyi={W\bibinithyphendelim F\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=9ca00ffd7cc35f7cfb8f698aa9239c76}{%
+           family={Ozair},
+           familyi={O\bibinitperiod},
+           given={Sherjil},
+           giveni={S\bibinitperiod}}}%
+        {{hash=ccec1ccd2e1aa86960eb2e872c6b7020}{%
+           family={Courville},
+           familyi={C\bibinitperiod},
+           given={Aaron},
+           giveni={A\bibinitperiod}}}%
+        {{hash=40a8e4774982146adc2688546f54efb2}{%
+           family={Bengio},
+           familyi={B\bibinitperiod},
+           given={Yoshua},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{d17e6557c5836d2d978179999ea1037f}
+      \strng{fullhash}{fa2b4fb373e75fcf07b4b987e4507545}
+      \strng{bibnamehash}{d17e6557c5836d2d978179999ea1037f}
+      \strng{authorbibnamehash}{d17e6557c5836d2d978179999ea1037f}
+      \strng{authornamehash}{d17e6557c5836d2d978179999ea1037f}
+      \strng{authorfullhash}{fa2b4fb373e75fcf07b4b987e4507545}
+      \field{labelalpha}{Goo+14}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Advances in neural information processing systems}
+      \field{title}{Generative adversarial nets}
+      \field{volume}{27}
+      \field{year}{2014}
+    \endentry
+    \entry{kondratyev2019market}{article}{}
+      \name{author}{2}{}{%
+        {{hash=61a71c90dc9e70734f6b0f74bfdd7232}{%
+           family={Kondratyev},
+           familyi={K\bibinitperiod},
+           given={Alexei},
+           giveni={A\bibinitperiod}}}%
+        {{hash=b22fa61f8480816853a97fc449b40dd9}{%
+           family={Schwarz},
+           familyi={S\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{c47b0a7350b46a4a9268b491ff4076f4}
+      \strng{fullhash}{c47b0a7350b46a4a9268b491ff4076f4}
+      \strng{bibnamehash}{c47b0a7350b46a4a9268b491ff4076f4}
+      \strng{authorbibnamehash}{c47b0a7350b46a4a9268b491ff4076f4}
+      \strng{authornamehash}{c47b0a7350b46a4a9268b491ff4076f4}
+      \strng{authorfullhash}{c47b0a7350b46a4a9268b491ff4076f4}
+      \field{labelalpha}{KS19}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Available at SSRN 3384948}
+      \field{title}{The market generator}
+      \field{year}{2019}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

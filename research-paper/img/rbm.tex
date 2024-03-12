@@ -1,0 +1,64 @@
+\begin{tikzpicture}[scale=1.2]
+
+    % Parameters
+    \def\nbhid{3}
+    \def\nbvis{4} % Change to desired number of visible nodes
+    
+    % Calculate center position for visible nodes
+    \pgfmathsetmacro\centerVis{(\nbvis-1)/2}
+    % Calculate center position for hidden nodes
+    \pgfmathsetmacro\centerHid{(\nbhid-1)/2}
+    
+    % Define hidden nodes
+    \foreach \y in {1,2,...,\nbhid}
+        \node[draw, circle, fill=red!20] (h\y) at (\y*1.5-\centerHid*1.5,0) {$h_\y$};
+    
+    % Add dots for hidden nodes
+    \node[draw=none, fill=none] (hdots1) at (\nbhid*1.5+1.5-\centerHid*1.5,0) {$\cdots$};
+    \node[draw, circle, fill=red!20] (hm) at (\nbhid*1.5+3-\centerHid*1.5,0) {$h_m$};
+
+    % Define visible nodes
+    \foreach \x in {1,2,...,\nbvis}
+        \node[draw, circle, fill=blue!20] (v\x) at (\x*1.5-\centerVis*1.5,3) {$v_\x$};
+    
+    % Add dots for visible nodes
+    \node[draw=none, fill=none] (vdots1) at (\nbvis*1.5+1.5-\centerVis*1.5,3) {$\cdots$};
+    \node[draw, circle, fill=blue!20] (vn) at (\nbvis*1.5+3-\centerVis*1.5,3) {$v_n$};
+    
+    % Connect visible nodes to hidden nodes
+    \foreach \x in {1,2,...,\nbvis}
+        \foreach \y in {1,2,...,\nbhid}
+            \draw (v\x) -- (h\y);
+    
+    % Connect vn to hidden nodes and hm
+    \foreach \y in {1,2,...,\nbhid}
+        \draw (vn) -- (h\y);
+    \foreach \x in {1,2,...,\nbvis}
+        \draw (hm) -- (v\x);
+    \draw (vn) -- (hm);
+    
+    % Add arrows indicating random firing
+    \foreach \y in {1,2,...,\nbhid} {
+        \pgfmathsetmacro{\rand}{random(0,1)}
+        \ifnum\rand=0
+            \def\lbl{0}
+        \else
+            \def\lbl{1}
+        \fi
+        \draw[->] (h\y.south) -- ++(0,-0.5) node[below] {$\lbl$};
+    }
+
+    \draw[->] (hm.south) -- ++(0,-0.5) node[below] {$0 \text{ or } 1$};
+
+    % Activation
+    \node[draw, rectangle, fill=white, minimum width=1.5cm, minimum height=1.5cm, rounded corners=5pt] (sigmoid) at (\centerVis+1,1.5) {};
+    \draw[thick, domain=-0.5:0.5, smooth, variable=\x, black]  plot ({\x+\centerVis+1}, {1+ 1/(1+exp(-\x*8))});
+    \node[black, font=\footnotesize, anchor=south east] at (sigmoid.south east) {$\sigma(z)$};
+
+
+    
+    % Add labels
+    \node[above left, font=\bfseries] at (0,3.5) {Visible Nodes};
+    \node[below left, font=\bfseries] at (0,-0.5) {Hidden Nodes};
+
+\end{tikzpicture}

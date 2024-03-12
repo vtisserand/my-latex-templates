@@ -1,0 +1,7 @@
+\babel@toc {english}{}\relax 
+\contentsline {section}{\numberline {1}My research interests}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Stochastic differential equations}{2}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Deep learning}{2}{subsection.1.2}%
+\contentsline {section}{References}{4}{section*.6}%
+\contentsline {section}{Appendices}{5}{section*.7}%
+\contentsline {section}{\numberline {A}Double no-touch option derivation}{5}{appendix.a.A}%

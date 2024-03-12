@@ -1,0 +1,49 @@
+\section{My research interests}
+
+\subsection{Stochastic differential equations}
+
+\subsubsection*{Simulation schemes for path-dependent options\footnote{\fullcite{gobet2000weak}}}
+
+We are interested in a path-dependent payoff on an asset with diffusion $(X_t)_{0\leq t \leq T}$.
+In particular, we kill the diffusion when it leaves the open set $D$.
+\newline With $\tau \coloneqq \inf\{t > 0 : X_t \notin D\}$, this leads to the computation of $\mathbb{E}\left[\mathbbm{1}_{T < \tau} f(X_T)\right].$
+
+\begin{proposition}
+    Price of a double no-touch option with lower and upper barriers $S_{min}$, $S_{max}$:
+
+
+$$V(S,t) = 2\pi \left(\dfrac{S}{S_{min}}\right)^{\alpha} e^{\beta(T-t)} \sum_{n=1}^{\infty} n \left[\dfrac{(1 - (-1)^{m}e^{-\alpha H})}{\alpha^2 H^2 + n^2 \pi^2} \right] \exp \left(-\frac{1}{2}\sigma^2 \dfrac{n^2 \pi^2}{H^2} t \right) \sin \left(\dfrac{n\pi}{H} \ln \frac{S}{S_{min}} \right).$$
+
+with $H=\ln(S_{max}/S_{min})$, $\alpha = -\Tilde{r}/\sigma^2$ and $\beta = -\Tilde{r}/ 2\sigma^2 - r$, $\Tilde{r} = r - \frac{1}{2}\sigma^2$.
+\end{proposition}
+
+\begin{proof}
+    See \ref{appendix:a}
+\end{proof}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{img/dnt_mc.pdf}
+    \caption{Evolution of the double no-touch option that pays $\$1$ against $S_0$}
+    \label{fig:doublenotouchmc}
+\end{figure}
+
+\subsection{Deep learning}
+
+\cite{gobet2000weak}
+
+\subsubsection*{Generating synthetic data\footnote{\fullcite{kondratyev2019market}}}
+
+Monte Carlo risk engines based on historical events may lead to an overfitting in the backtesting process. Being able to generate unseen yet but coherent market scenarios can be crucial from a risk-management perspective.
+In mathematical terms, generating realistic market scenarios is "sampling from the joint distribution of risk factors". A simple \textbf{parametric} approach to this problem would be calibrating a normal law to the distribution of log-returns and sampling from it. This empirical distribution exhibiting -- among other particularties -- skewness and kurtosis \cite{cont2001empirical}, it is often a poor approximation of reality.\newline
+Alternative \textbf{non-parametric} approaches can be found in Generative Adversarial Network (GAN) \cite{goodfellow2014generative}, where the target distribution is directly learned from the data without the need for assumptions about the form of it. With this framework though, we are already entering the realm of neural networks.
+
+
+\begin{figure}[H]
+    \centering
+    \include{img/rbm}
+    \caption{Bernoulli Restricted Boltzmann Machine (RBM) bipartite graph}
+    \label{fig:rbm}
+\end{figure}
+
+
