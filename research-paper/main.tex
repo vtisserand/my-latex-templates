@@ -1,0 +1,95 @@
+\documentclass[english, a4paper, 12pt]{article}
+
+% Overall document aspect
+\usepackage[utf8]{inputenc}
+\usepackage[toc,page]{appendix}
+\usepackage[skip=0.75\baselineskip plus 2pt]{parskip}
+\usepackage{geometry}
+\geometry{vmargin=2.5cm}
+\usepackage{changepage}
+
+% For specific parts, tools
+\usepackage{hyperref}
+\usepackage[toc,page]{appendix}
+\usepackage{enumitem}
+
+% Tables
+\usepackage{tabularray}
+\usepackage{pifont}
+\usepackage{xcolor}
+\usepackage{breqn}
+\usepackage{booktabs}
+\newcommand{\cmark}{\textcolor{green!80!black}{\ding{51}}}
+\newcommand{\xmark}{\textcolor{red}{\ding{55}}}
+\usepackage{multirow}
+
+% For images
+\usepackage{graphicx}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[skip=0.5\baselineskip]{caption}
+\usepackage{subcaption}
+\usepackage{wrapfig}
+\usepackage{tikz}
+
+% Maths
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{bbm}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}{Proposition}[theorem]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+
+
+% Bibliography
+\usepackage[
+    backend=biber,
+    style=alphabetic,
+    sorting=ynt,
+    natbib=true
+    ]{biblatex}
+
+\addbibresource{include/biblio.bib}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=teal,
+    citecolor=purple,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdfpagemode=FullScreen,
+    }
+
+
+\title{Research paper template}
+\author{Vivien Tisserand}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\input{include/abstract.tex}
+
+\tableofcontents
+
+\newpage
+
+\input{include/research_interests.tex}
+
+\newpage
+
+\printbibliography
+\addcontentsline{toc}{section}{References}
+
+\newpage
+
+\input{include/appendix.tex}
+
+\end{document}
+
+
