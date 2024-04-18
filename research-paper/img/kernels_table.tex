@@ -1,0 +1,19 @@
+\begin{table}[H]
+\centering 
+\begin{adjustbox}{width=15cm,center}
+\resizebox{\textwidth}{!}{\begin{tabular}{c c c c c}
+\hline
+\textbf{Model name} &   ${K(t)}$ & \textbf{Domain of ${H}$} & \textbf{Semi-mart.} & \textbf{Markovian} \\
+%	[0.5ex] % inserts table
+%heading
+\hline 
+\textit{rough} & $\eta t^{H-1/2}$ & $(0,1/2]$ & \xmark  & \xmark \\
+\textit{path-dependent} & $\eta (t+\varepsilon)^{H-1/2}$ & $(-\infty,1/2] $ & \cmark   & \xmark  \\
+\textit{one-factor} & $\eta \varepsilon^{H-1/2}e^{-(1/2-H)\varepsilon^{-1} t}$ & $(-\infty,1/2]$ & \cmark   & \cmark  \\
+$\textit{two-factor}$ & \makecell{$\eta_1 \varepsilon^{H_1-1/2} e^{-(1/2-H_1)\varepsilon^{-1} t}+$\\ $\eta_2 \varepsilon^{H_2-1/2} e^{-(1/2-H_2)\varepsilon^{-1} t}$} & $(-\infty,1/2]$ & \cmark   & \cmark \\
+\hline
+\end{tabular}}
+\end{adjustbox}
+\caption{Different kernels used through the paper, table and names from \cite{abi2024volatility}.}
+\label{tab:kernels}
+\end{table}

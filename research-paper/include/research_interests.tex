@@ -28,6 +28,24 @@ with $H=\ln(S_{max}/S_{min})$, $\alpha = -\Tilde{r}/\sigma^2$ and $\beta = -\Til
     \label{fig:doublenotouchmc}
 \end{figure}
 
+\subsubsection*{Quadratic Volterra Heston stochastic volatility model}
+
+A microstructure-based model for spot and instantaneous variance process with several kernels to plug in that generalized \cite{gatheral2020quadratic}:
+
+\begin{equation*}\label{eqn:qheston}
+\left\{
+  \begin{aligned}
+    dS_t &= S_t \sqrt{V_t} dW_t,\\
+    V_t &= a(Z_t - b)^2 + c,\\
+    Z_t &= \xi_0(t) + \int_0^{t} K(t-s) \sqrt{V_s} dB_s,
+  \end{aligned}
+\right.
+\end{equation*}
+
+where $\langle dW, dB \rangle_t = \rho dt$. 
+
+\input{img/kernels_table}
+
 \subsection{Deep learning}
 
 \subsubsection*{Generating synthetic data\footnote{\fullcite{kondratyev2019market}}}
