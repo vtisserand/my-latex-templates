@@ -4,7 +4,11 @@ Several LaTeX templates, with zip files available to upload them directly to e.g
 
 ## Previews
 
+### research-paper
+
 ![Research paper](previews/research-paper.png)
+
+### presentation
 
 ![Presentation](previews/presentation.png)
 
