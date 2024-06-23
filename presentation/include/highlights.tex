@@ -1,0 +1,30 @@
+\section{Highlights}
+
+\begin{frame}{Rough Volatility}
+    \input{include/tables/kernels}
+\end{frame}
+
+\begin{frame}{fBM}
+
+    We estimate a Hurst exponent $H \approx 0.14$, consistent with \cite{gatheral2022volatility}.
+
+    A convenient way to get rougher volatility is to change the stochastic driver to a fractional Brownian motion. 
+    \begin{block}{Fractional Brownian motion}
+    This process $B_t^H$ is a continuous zero-mean Gaussian with covariance function
+    \[
+    \mathbb{E}[B_t^H B_s^H] = \dfrac{1}{2} \left( \lvert t \rvert ^{2H} + \lvert s \rvert ^{2H} - \lvert t-s \rvert ^{2H}  \right).
+    \]
+    \end{block}
+
+    This yields models that are neither Markovian nor semimartingales! Is it a good tradeoff?
+\end{frame}
+
+\begin{frame}{Solving the optimization problem}
+
+    We've tested different optimizers but choose to go with SLSQP, in particular because it accepts constraints.
+    
+    \begin{exampleblock}{Initial guess}
+        We start the optimization with the set of parameters: \[\Theta = \{a,b,c,H,\eta,\rho,\xi_0,\varepsilon \} = \{0.3, 0.1, 0.0025, 0.14, 0.7, -1.0, 0.3, 1/52\},\]
+        although we have empirical proxies for $a$, $b$ and $c$ (convexity, skew and ATM vol level).
+    \end{exampleblock}
+\end{frame}

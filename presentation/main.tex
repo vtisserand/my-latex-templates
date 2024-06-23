@@ -1,0 +1,38 @@
+\PassOptionsToPackage{svgnames,dvipsnames,x11names}{xcolor}
+\RequirePackage{xcolor}
+
+\documentclass{beamer}
+
+\input{include/packages}
+
+\usetheme{CambridgeUS}
+
+\title{Presentation template}
+\subtitle{With some typical frames}
+\author[Vivien Tisserand]{Vivien Tisserand, other authors}
+\institute{\LaTeX Institute}
+\date{\today}
+
+\input{include/beamer-settings}
+
+\begin{document}
+
+\begin{frame}
+    \titlepage
+\end{frame}
+
+\begin{frame}{Motivation}
+    A series of frame with the different layout one might want to use for a presentation
+\end{frame}
+
+\begin{frame}{Outline}
+    \tableofcontents
+\end{frame}
+
+\input{include/highlights}
+
+\begin{frame}[allowframebreaks]{References}
+    \printbibliography
+\end{frame}
+
+\end{document}

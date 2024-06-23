@@ -1,0 +1,57 @@
+% Tables stuff
+\usepackage{xcolor}
+\usepackage{pifont}
+\usepackage{breqn}
+\usepackage{booktabs}
+\newcommand{\cmark}{\textcolor{green!80!black}{\ding{51}}}
+\newcommand{\xmark}{\textcolor{red}{\ding{55}}}
+\definecolor{GreenQuintic}{RGB}{134, 211, 113}
+\newcommand{\bmark}{\textcolor{blue!80}{\ding{51}}}
+\newcommand{\blmark}{\textcolor{gray}{\ding{55}}}
+\newcommand{\mehmark}{\textcolor{orange}{$\boldsymbol{\approx}$}}
+\usepackage{multirow}
+\usepackage{makecell}
+\usepackage{adjustbox}
+\usepackage{enumitem}
+\usepackage{multicol}
+\usepackage{comment}
+
+% For images
+\usepackage{graphicx}
+\usepackage[skip=0.5\baselineskip]{caption}
+\usepackage{subcaption}
+\usepackage{wrapfig}
+\usepackage{tikz}
+\usepackage{float} % For forcing placement
+\usepackage{changepage}
+\usepackage{animate}
+\usepackage{multimedia}
+
+% Maths
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{bbm}
+\newcommand\independent{\protect\mathpalette{\protect\independenT}{\perp}}
+\def\independenT#1#2{\mathrel{\rlap{$#1#2$}\mkern2mu{#1#2}}}
+
+\hypersetup{
+colorlinks=true,
+linkcolor=purple,
+citecolor=purple,
+filecolor=magenta,      
+urlcolor=cyan,
+pdfpagemode=FullScreen,
+}
+
+% Bibliography stuff
+%\usepackage{natbib}
+\usepackage[
+backend=biber,
+style=alphabetic,
+sorting=ynt,
+natbib=true
+]{biblatex}
+\addbibresource{include/biblio.bib}
